@@ -1,0 +1,671 @@
+/* ***************************************************************************************************************
+Common css styling 
+*************************************************************************************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+body{ 
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    font-size: 10px;
+    --primary_color:#81c408;
+    --primary_hover_color:#4f7802;
+}
+li{
+    list-style: none;
+    position: relative;
+}
+.bord{
+    border: 1px solid red !important;
+}
+.bord2{
+    border: 2px solid green !important;
+}
+.h-100{
+    height: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: end;
+}
+.active{
+    color: var(--primary_color) !important;
+    font-weight: bold;
+}
+.heading h2{
+    color: var(--primary_color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.loadMore button{
+    font-size: 2rem;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    background: #f2a437;
+    color: #fff;
+}
+
+.card{
+    background: #f2a437;
+    margin-top: 15px;
+    padding: 5px;
+}
+.card button{
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #f2a437;
+}
+.card button:hover{
+    background: var(--primary_color);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ***************************************************************************************************************
+Start header section styling 
+*************************************************************************************************************** */
+header{
+    width: 100%;
+    min-height: 100px;
+    background: #fff;
+}
+
+/* ****************** Start navTop section styling **************** */
+header .navTop{
+    width: 100%;
+    height: 55px;
+    font-size: 1.5rem;
+}
+.navTop .row{
+    height: 55px;
+    background: var(--primary_color);
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
+.navTop .row .col:nth-child(2) a:hover{
+    color: #f2c637;
+}
+
+/* ****************** Start navBottom section styling ************** */
+header .navBottom{
+    padding: 16px 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #67666623;    
+    box-shadow: 0px 3px 25px #7271717e;
+    position: relative;
+    z-index: 999;
+}
+.navBottom .row .brandName{
+    color: var(--primary_color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.navBottom .row .deskTopManue a{
+    padding: 5px 18px;
+    color: gray;
+}
+.navBottom .row .deskTopManue ul li:hover> a{
+    color: #f2c637;
+}
+.navBottom .row .navIcon i{
+    font-size: 3rem;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 100%;
+    color: var(--primary_color);
+}
+.navBottom .row .navIcon i:hover{
+    color: var(--primary_hover_color);
+}
+.navBottom .row .navIcon a:first-child i{
+    border: 1px solid #f2c637;
+    font-size: 1.7rem;
+}
+.navBottom .row .navIcon a:first-child i:hover{
+    background: #f2c637;
+}
+.navBottom .row .deskTopManue ul li:hover>ul{
+    display: block !important;
+}
+.dropdownManue{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 28px;
+    left: -100px;
+    padding: 15px 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px #69696945;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.dropdownManue a{
+    display: block;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f2c637 !important;
+}
+.dropdownManue a:hover{
+    background: #e8e7e7;
+}
+/* ********* Mobile manue **************** */
+.bars i{
+    border: 1px solid #f2c637;
+    box-shadow: 0px 0px 1px #4f7802;
+    font-size: 2.3rem;
+    padding: 7px 15px;
+    cursor: pointer;
+
+}
+.navBottom .mobileManue{
+    height: auto;
+    display: none;
+}
+.navBottom .mobileManue ul li a{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    color: gray;
+    border-bottom: 1px solid #f2c637;
+}
+.navBottom .mobileManue ul li:hover>a{
+    color: #f2c637 !important;
+    background: #f2f2f2;
+}
+.navBottom .mobileManue ul li:hover ul{
+    display:  block !important;
+}
+
+/* ************************ Start hero section styling ******************** */
+header .binner{
+    width: 100%;
+    background: url("./img/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+.binner .left h3{
+    font-size: 3rem;
+    color: #f2c637;
+}
+.binner .left h2{
+    font-size: 6rem;
+    color: var(--primary_color);
+}
+.binner .left form{
+    display: flex;
+    width: 85%;
+}
+.binner .left form input{
+    font-size: 1.7rem;
+    background: #fff;
+    padding: 15px;
+}
+.binner .left form input:first-child{
+    width: 100%;
+    border: none;
+    border: 2px solid #f2c637;
+    border-radius: 40px;
+}
+.binner .left form input:last-child{
+    border-radius: 30px;
+    border: 2px solid #f2c637;
+    background: var(--primary_color);
+    color: #fff;
+    margin-left: -45px;
+    cursor: pointer;
+}
+
+.binner .right .box{
+    position: relative;
+    background: #f2c637;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.binner .right .box .item{
+    height: 300px;
+}
+.binner .right .box .item h2{
+    background: #e7862bd1;
+    font-size: 3rem;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 3px;
+}
+.binner .right .box .item1{
+    background: url("./img/hero-img-1.png");
+    background-size: cover;
+}
+.binner .right .box .item2{
+    background: url("./img/hero-img-2.jpg");
+    background-size: cover;
+}
+.binner .right .box .owl-nav{
+    position: absolute;
+    top: 38%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 100%;
+    pointer-events: none;
+}
+.binner .right .box .owl-nav button {
+    background: #82c408b1;
+    font-size: 4rem;
+    width: 50px;
+    height: 50px;
+    line-height: 0 !important;
+    border-radius: 100%;
+    outline: 1px solid #fff;
+    pointer-events: painted !important;
+}
+.binner .right .box .owl-nav button:hover{
+    background: #4f780289;
+}
+
+/* ***************************************************************************************************************
+Start main styling 
+*************************************************************************************************************** */
+main{
+    width: 100%;
+}
+
+/* ************************* SomeInfo section styling ************************ */
+main .someInfo{
+    width: 100%;
+    padding: 80px 0;
+}
+.someInfo .box{
+    background: #f4f6f8;
+    height: 270px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #d8d8d7b8 inset;
+    border-radius: 5px;
+}
+.someInfo .box .iconBox{
+    background: #ffb524;
+    box-shadow: 0px 0px 5px #f2c637 inset;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 110px;
+    color: #fff;
+}
+.someInfo .box .iconBox::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: 26%;
+    width: 50px;
+    height: 50px;
+    background: #ffb524;
+    border-top-right-radius: 100%;
+    transform: rotate(-45deg);
+}
+.someInfo .box h2{
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    color: gray;
+}
+.someInfo .box p{
+    font-size: 1.5rem;
+    color: #f2c637;
+    font-weight: bold;
+}
+
+
+/* *********************** popularProduct's section styling ******************* */
+main .jush{
+    min-height: 470px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("./img/jushBG.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px 0px;
+}
+.jush .heading h2{
+    text-align: center;
+    font-size: 2.5rem !important;
+    color: #f2c637;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #e8e7e7;
+}
+.jush .jushBox{
+    padding: 5px 0;
+    background: #fff;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+.jush .jushBox .deleveryBox{
+    border: 2px double gray;
+}
+.jush .jushBox .deleveryBox img{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+.jush .jushBox .deleveryBox b{
+    font-size: 1.2rem;
+    color: gray;
+}
+.jush .jushBox .deleveryBox button{
+    width: 100%;
+    margin-top: 8px;
+}
+.jush .jushBox .deleveryBox button a{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    background: #f2a437;
+    color: #fff;
+    font-weight: bold;
+}
+.jush .jushBox .deleveryBox button a:hover{
+    background-color: var(--primary_color);
+
+}
+.jush .jushBox .owl-box{
+    position: relative;
+}
+.jush .jushBox .owl-box .item{
+    min-height: 280px;
+    position: relative;
+    padding: 5px;
+    border: 1px double gray;
+    color: #f2a437;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.jush .jushBox .owl-box .item img{
+    width: 100%;
+    aspect-ratio: 1/0.8;
+    object-fit: contain;
+    border-bottom: 0.5px solid #8080805d;
+    margin-bottom: 8px;
+    mix-blend-mode: multiply;
+}
+.jush .jushBox .owl-box .item .offer{
+    position: absolute;
+    top: 1%;
+    padding-right: 10px;
+    left: -9%;
+    width: 50%;
+    text-align: center;
+    background-color: green;
+    font-size: 1.6rem;
+    transform: rotate(-30deg);
+
+}
+.jush .jushBox .owl-box .owl-nav{
+    position: absolute;
+    top: 33%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.jush .jushBox .owl-box .owl-nav button {
+    background: #e4890aaf;
+    font-size: 4rem;
+    width: 40px;
+    height: 80px;
+    line-height: 0 !important;
+    outline: 1px solid #fff;
+    margin: 0;
+}
+.jush .jushBox .owl-box .owl-nav button:hover{
+    background: #e4890afd;
+}
+
+/* *********************** Start Vesitable and frouts section styling ******************* */
+main :is(.ourFrouts, .ourVesitable){
+    width: 100%;
+    min-height: 500px;
+}
+:is(.ourFrouts, .ourVesitable) .item .box{
+    height: 275px;
+    margin-bottom: 10px;
+    border: 0 !important;
+    color: #f2a437;
+    padding: 4px;
+    box-shadow: 0px 0px 5px #2525254d;
+    overflow: hidden;
+}
+:is(.ourFrouts, .ourVesitable) .item .box:hover{
+    box-shadow: 0px 0px 30px #2525254d;
+}
+:is(.ourFrouts, .ourVesitable) .item .box:hover img{
+    transform: scale(1.05);
+}
+:is(.ourFrouts, .ourVesitable) .item .box img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    overflow: hidden;
+}
+:is(.ourFrouts, .ourVesitable) .item .box .unit{
+    margin-top: 3px;
+    font-size: 1.5rem;
+}
+:is(.ourFrouts, .ourVesitable) .item .box .unit button{
+    padding: 3px 10px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border: none;
+    box-shadow: 0px 0px 5px #2525254d inset;
+    color: #4f7802;
+}
+
+/* *************************** Start author section styling *************************** */
+main .author{
+    width: 100%;
+    min-height: 350px;
+    font-size: 1.4rem;
+}
+.author img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* *************************** Start clintReview section styling ********************** */
+main .clintReview{
+    min-height: 350px;
+}
+.clintReview .heading{
+    width: 100%;
+    padding: 10px 0;
+    background: var(--primary_color);
+    margin-bottom: 30px;
+}
+.clintReview .item{
+    height: 300px;
+}
+.clintReview .item .box{
+    height: 100%;
+    width: 85%;
+    margin:0 auto;
+    background: var(--primary_color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #2525254d;
+}
+.clintReview .item .box .textBox{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-top-left-radius: 70%;
+    border-top: 2px solid #f2a437;
+    border-left: 2px solid #f2a437;
+    position: relative;
+}
+.clintReview .item .box .textBox img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 2px solid #f2a437;
+    border-left: 2px solid #f2a437;
+    border-right: 2px solid var(--primary_color);
+    border-bottom: 2px solid var(--primary_color);
+}
+.clintReview .item .box .textBox .starrBox{
+    position: absolute;
+    font-size: 15px;
+    top: 25%;
+    right: 30%;
+}
+.clintReview .item .box .textBox p{
+    font-size: 1.2rem;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.clintReview .item .box .textBox button{
+    width: 85%;
+    display: block;
+    margin: 14px auto;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: #f2a437;
+    color: #fff;
+    border: 0;
+}
+.clintReview .item .box .textBox button:hover{
+    background: var(--primary_color);
+}
+
+/* ***************************************************************************************************************
+Start footer styling 
+*************************************************************************************************************** */
+footer{
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+footer .footerTop .item{
+    height: 300px;
+}
+.footerTop .footerHeading{
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.footerTop .footerHeading i{
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.footerTop p{
+    font-size: 1.4rem;
+    margin-bottom: 17px;
+    color: #959595;
+}
+.footerTop i{
+    font-size: 2rem;
+}
+.footerTop ul li{
+    color: #959595;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.footerTop form input:first-child{
+    background-color: #000000;
+}
+.footerTop form input{
+    font-size: 1.5rem;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+}
+.footerTop .brand img{
+    width: 20%;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 70px;
+}
+
+.footerBottom{
+    background-color: #000000;
+}
+
+
+
+
+
+/* ***************************************************************************************************************
+Start MediaQuerry styling 
+*************************************************************************************************************** */
+@media all and (max-width:500px){
+    :is(.ourFrouts, .ourVesitable) .item .box{
+        height: 450px !important;
+        font-size: 1.6rem;
+    }
+    :is(.ourFrouts, .ourVesitable) .item .box img{
+        margin-bottom: 10px;
+    }
+    :is(.ourFrouts, .ourVesitable) .item .box h2{
+        margin-top: 5px;
+    }
+    :is(.ourFrouts, .ourVesitable) .item .box .unit{
+        margin-top: 20px;
+    }
+    :is(.ourFrouts, .ourVesitable) .item .box .card{
+        margin-top: 30px !important;
+    }
+}
+@media all and (max-width:992px){
+    .binner .left h3{
+        font-size: 2.5rem;
+    }
+    .binner .left h2{
+        font-size: 4rem;
+    }
+}
+
+@media all and (max-width:768px){
+    header .binner{
+        height: auto;
+        padding: 50px 0;        
+    }
+}
+
